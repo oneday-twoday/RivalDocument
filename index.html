@@ -572,19 +572,67 @@
 
 <!-- 4. AI 플레이어 -->
         <section id="section4" class="card scroll-mt-20">
-            <h2 class="text-2xl font-bold mb-4 text-purple-400">🤖 APC 라이벌 인공지능 설계</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-300">
-                <div class="p-4 bg-slate-800 rounded border border-slate-700">
-                    <h4 class="font-bold text-slate-400 mb-2">1. 파밍 최적화</h4>
-                    PC와의 거리를 유지하면서 몬스터 밀집도가 가장 높은 구역을 탐색하여 이동.
-                </div>
-                <div class="p-4 bg-slate-800 rounded border border-slate-700">
-                    <h4 class="font-bold text-slate-400 mb-2">2. 위기 관리</h4>
-                    자신의 HP가 40% 이하로 떨어지면 공격보다 회피 무빙 가중치를 높여 생존 도모 및 회복 스텟 우선 투자.
-                </div>
-                <div class="p-4 bg-slate-800 rounded border border-slate-700">
-                    <h4 class="font-bold text-slate-400 mb-2">3. 결전 알고리즘</h4>
-                    대결 모드 시 장막의 중심을 점유하며 PC가 스킬 범위에 들어오도록 유도.
+            <h2 class="text-2xl font-bold mb-8 text-white flex items-center gap-3">
+                <span class="w-2 h-8 bg-purple-500 rounded-full"></span> 4. 🤖 APC 라이벌 인공지능 설계
+            </h2>
+
+            <div class="space-y-6">
+                <div class="p-8 bg-gradient-to-br from-slate-900 to-purple-950/30 rounded-3xl border border-purple-500/20 shadow-xl relative overflow-hidden">
+                    <div class="absolute -right-8 -top-8 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl"></div>
+                    
+                    <h3 class="text-xl font-bold mb-6 text-purple-300 flex items-center gap-2">
+                        적응형 라이벌 알고리즘: "The Shadow"
+                    </h3>
+
+                    <div class="flex flex-col gap-4 text-sm">
+                        <div class="p-5 bg-slate-800/40 rounded-2xl border border-slate-700 hover:border-purple-500/40 transition-colors group">
+                            <div class="flex justify-between items-start mb-2">
+                                <p class="text-white font-bold flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-purple-500 rounded-full"></span> 전략적 파밍 및 성동격서
+                                </p>
+                                <span class="text-[10px] text-purple-400 font-mono">STEAL & BLOCK</span>
+                            </div>
+                            <p class="text-slate-400 leading-relaxed text-xs">
+                                PC와의 거리를 유지하면서 <span class="text-purple-300">몬스터 밀집도가 높은 구역을 우선 선점</span>합니다. 특히 PC가 타격 중인 몬스터의 경험치를 가로채기 위해 의도적으로 사거리를 조절하여 접근합니다.
+                            </p>
+                        </div>
+
+                        <div class="p-5 bg-slate-800/40 rounded-2xl border border-slate-700 hover:border-purple-500/40 transition-colors">
+                            <div class="flex justify-between items-start mb-2">
+                                <p class="text-white font-bold flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-purple-500 rounded-full"></span> 실시간 카운터 스텟 투자
+                                </p>
+                                <span class="text-[10px] text-purple-400 font-mono">ADAPTIVE BUILD</span>
+                            </div>
+                            <p class="text-slate-400 leading-relaxed text-xs">
+                                PC가 투자한 스텟 정보를 실시간으로 분석합니다. 유저가 <span class="text-emerald-400 font-bold">공격</span>에 집중하면 APC는 <span class="text-blue-400 font-bold">회피 및 회복</span>에, 유저가 <span class="text-blue-400 font-bold">생존</span>에 투자하면 <span class="text-rose-400 font-bold">관통력과 쿨다운</span>에 우선 투자하여 상성을 무너뜨립니다.
+                            </p>
+                        </div>
+
+                        <div class="p-5 bg-slate-800/40 rounded-2xl border border-slate-700 hover:border-purple-500/40 transition-colors">
+                            <div class="flex justify-between items-start mb-2">
+                                <p class="text-white font-bold flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-purple-500 rounded-full"></span> 위기 관리 및 기만 무빙
+                                </p>
+                                <span class="text-[10px] text-purple-400 font-mono">SURVIVAL AI</span>
+                            </div>
+                            <p class="text-slate-400 leading-relaxed text-xs">
+                                자신의 HP가 40% 이하로 떨어지면 공격 가중치를 즉시 낮추고 <span class="text-slate-200">회피 알고리즘</span>을 실행합니다. 대결 모드에서는 유저의 스킬 궤적을 예측하여 8방향으로 불규칙하게 기동합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 bg-purple-500/10 p-5 rounded-2xl border border-purple-500/30">
+                        <div class="flex items-center gap-4">
+                            <div class="shrink-0 w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center text-2xl text-purple-400">⚔️</div>
+                            <div>
+                                <p class="text-purple-300 font-bold text-sm">최종 결전 알고리즘 (Final Duel)</p>
+                                <p class="text-slate-400 text-[11px] leading-relaxed">
+                                    자기장 장막의 <span class="text-white">정중앙(Dead Zone)</span>을 최우선적으로 점유하여 유저가 자기장 대미지를 입도록 외곽으로 밀어내며, 보유한 스킬의 사거리 끝에 유저를 위치시키는 '아웃복싱' 전술을 구사합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
